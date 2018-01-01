@@ -8,7 +8,6 @@ public class CameraMovement : MonoBehaviour {
 	float mouseAnchorX;
 	float mouseAnchorY;
 
-
 	[SerializeField]
 	private float cameraSpeed = 2;
 
@@ -48,7 +47,8 @@ public class CameraMovement : MonoBehaviour {
 									= new Vector3(GameObject.Find ("Main Camera").transform.position.x+(dragVectorX)/100, GameObject.Find ("Main Camera").transform.position.y+(dragVectorY)/100, -10);
 									mouseAnchorX = position.x;
 									mouseAnchorY = position.y;
-									print ("dragVectorX:"+dragVectorX+"; dragVectorY:"+dragVectorY);}
+									//print ("dragVectorX:"+dragVectorX+"; dragVectorY:"+dragVectorY);
+			}
 		 }else{mouseIsDown = false;}
 
 
