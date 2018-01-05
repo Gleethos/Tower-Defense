@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E9CEFB78-E558-5A65-CCA3-EC0AFFC77E51}</ProjectGuid>
+    <ProjectGuid>{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,6 +53,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BaseManager.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\DekoCreator.cs" />
+     <Compile Include="Assets\Scripts\Map.cs" />
      <Compile Include="Assets\Scripts\MapCreator.cs" />
      <Compile Include="Assets\Scripts\MapManager.cs" />
  <Reference Include="UnityEngine.UI">
