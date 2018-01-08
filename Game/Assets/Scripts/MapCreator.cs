@@ -1,38 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
+
 //using System;
 
 public class MapCreator : MonoBehaviour {
 
-	public GameObject Base;
 	Random dice = new Random();
 	[SerializeField]
 	private int testMap;
 	[SerializeField] 
 	private MapManager Map;
 	[SerializeField] 
-	private MapManager clutter;
-	[SerializeField] 
 	private GameObject[] Tile;
 	[SerializeField] 
 	private GameObject[] TileCorner;
-
-
 		
+	public int[,] testMap0 = new int[,]{
+		{0,0,0,0,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0},
+		{0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,1,1,1,1,5,5,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,0,0,0,0},
+		{1,4,1,1,3,3,5,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,0,0,0,0},
+		{1,4,1,1,3,5,5,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,0,0,0,0},
+		{1,4,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,4,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,4,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,4,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0},
+		{1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0}
+	};
 
 	// Use this for initialization
 	void Start () {
 	Map = new MapManager();
 		createLevel (Map.getMap(), 199);
-
-	clutter = new MapManager();
-		createLevel (clutter.getClutter(), 199);
-	
-
-
-
 	}
 	
 	// Update is called once per frame
@@ -42,10 +49,12 @@ public class MapCreator : MonoBehaviour {
 		
 	private void createLevel(int[,] map){
 	float l = map.Length;double a = Mathf.Pow (l, (1/2)); 
-
+		print ("HEEEEEEEY: "+a);
 	createLevel (map, a);
 	}
+		
 	private void createLevel(int[,] map, double a){
+	print ("Map is being built now! ...");
 	double length = a;
 		int shift =(int)length/2;
 
@@ -67,11 +76,8 @@ public class MapCreator : MonoBehaviour {
 			}
 
 		}
-
-
 		
 	//Placement Functions:
-
 
 	private void placeTileAt(int x, int y, int tileID)//Tile Placemen
 	{float tileSize = Tile[0].GetComponent<SpriteRenderer>().sprite.bounds.size.x;

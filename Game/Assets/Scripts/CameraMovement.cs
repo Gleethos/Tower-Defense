@@ -24,19 +24,18 @@ public class CameraMovement : MonoBehaviour {
 
 	private void checkInput()
 	{
-		//Kamera abgeändert aufgrund von massiver Gefahr auf epiletptischen Anfall!!!!
 
-		if(Input.GetKeyDown(KeyCode.W))
-		{transform.Translate (Vector3.up * 3);}
+		if(Input.GetKey(KeyCode.W))
+		{transform.Translate (Vector3.up * cameraSpeed * Time.deltaTime);}
 
-		if(Input.GetKeyDown(KeyCode.A))
-		{transform.Translate (Vector3.left * 3);}
+		if(Input.GetKey(KeyCode.A))
+		{transform.Translate (Vector3.left * cameraSpeed * Time.deltaTime);}
 
-		if(Input.GetKeyDown(KeyCode.S))
-		{transform.Translate (Vector3.down * 3);}
+		if(Input.GetKey(KeyCode.S))
+		{transform.Translate (Vector3.down * cameraSpeed * Time.deltaTime);}
 
-		if(Input.GetKeyDown(KeyCode.D))
-		{transform.Translate (Vector3.right * 3);}
+		if(Input.GetKey(KeyCode.D))
+		{transform.Translate (Vector3.right * cameraSpeed * Time.deltaTime);}
 
 	
 		if(Input.GetMouseButton(2))
