@@ -6,8 +6,8 @@ public class SpawnEnemy : MonoBehaviour {
 
     public GameObject[] waypoints;
     public GameObject testEnemyPrefab;
-	private float timer = 2f;
-	private int numberOfEnemies = 30;
+	private float timer = 10f;
+	private int numberOfEnemies = 20;
 
     // Use this for initialization
     void Start () {
@@ -23,7 +23,7 @@ public class SpawnEnemy : MonoBehaviour {
 
 		if (timer <= 0 && numberOfEnemies > 0) {
 			Instantiate (testEnemyPrefab).GetComponent<MoveEnemy> ().waypoints = waypoints;
-			timer = 2f;
+			timer = 10f;
 			numberOfEnemies--;
 		}
 

@@ -28,17 +28,23 @@ public class Bullet : MonoBehaviour {
 		if (desapwnTime <= 0) {
 			Destroy (gameObject);
 		}
+
+
+
+	}
+
+	/*public void OnTriggerEnter2D(Collider2D collider){
+		
+		Health--;
+
+		if (Health == 0) {
+			Destroy (collider.gameObject);
+		}
 	
+		
 
+		Destroy (gameObject);
 
-
-	}
-
-	public void OnCollisionEnter2D(Collision2D collider){
-		Destroy (this.gameObject);
-
-	}
-
-
+	}*/
 
 }

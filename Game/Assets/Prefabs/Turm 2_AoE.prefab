@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4789651648153446}
   - component: {fileID: 58982731454803372}
-  - component: {fileID: 114386213521830854}
+  - component: {fileID: 114329517813981770}
   m_Layer: 0
   m_Name: Turm 2_AoE
   m_TagString: Untagged
@@ -73,7 +73,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4789651648153446}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4766762868659670
 Transform:
@@ -81,13 +81,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1447031318469076}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.6, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.2, y: 0.35, z: 1}
   m_Children: []
   m_Father: {fileID: 4789651648153446}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4789651648153446
 Transform:
   m_ObjectHideFlags: 1
@@ -98,8 +98,8 @@ Transform:
   m_LocalPosition: {x: 3, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4766762868659670}
   - {fileID: 4200507507986240}
+  - {fileID: 4766762868659670}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -194,13 +194,13 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
---- !u!114 &114386213521830854
+--- !u!114 &114329517813981770
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -208,10 +208,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1987049619724146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b557cb61fbf0429489086361aa35ddc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c5dce9621089dc4a9e7dd95cd206cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   visionRadius: 2
-  attackSpeed: 1.5
+  attackSpeed: 0
   dmg: 0
-  bullet: {fileID: 1616874253336022, guid: 15dddd0c6f51cfd41a435dfff7ce04ee, type: 2}
+  rotateSpeed: 0
+  bullet: {fileID: 1552613258871120, guid: e413a2e9e91a24048a688f68102e7fea, type: 2}
