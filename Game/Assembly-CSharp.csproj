@@ -55,16 +55,11 @@
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Enemy_stat.cs" />
-     <Compile Include="Assets\Scripts\explosiv.cs" />
-     <Compile Include="Assets\Scripts\Granati.cs" />
-     <Compile Include="Assets\Scripts\Granten_Behavior.cs" />
      <Compile Include="Assets\Scripts\Map.cs" />
      <Compile Include="Assets\Scripts\MapCreator.cs" />
      <Compile Include="Assets\Scripts\MapManager.cs" />
      <Compile Include="Assets\Scripts\MoveEnemy.cs" />
      <Compile Include="Assets\Scripts\SpawnEnemy.cs" />
-     <Compile Include="Assets\Scripts\Stampfi.cs" />
-     <Compile Include="Assets\Scripts\Stampfi_Behavior.cs" />
      <Compile Include="Assets\Scripts\Turret_Behavior_PewPew.cs" />
      <Compile Include="Assets\Scripts\Turret_Placement.cs" />
  <Reference Include="UnityEngine.UI">
