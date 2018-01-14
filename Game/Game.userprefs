@@ -1,8 +1,12 @@
-﻿<Properties StartupItem="Game.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Map.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy_stat.cs">
     <Files>
-      <File FileName="Assets\Scripts\Map.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Turret_Placement.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scripts\Turret_Behavior_PewPew.cs" Line="90" Column="23" />
+      <File FileName="Assets\Scripts\SpawnEnemy.cs" Line="10" Column="34" />
+      <File FileName="Assets\Scripts\Bullet.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\Enemy_stat.cs" Line="15" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
