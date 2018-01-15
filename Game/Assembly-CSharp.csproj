@@ -51,22 +51,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BaseManager.cs" />
-     <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\CameraMovement.cs" />
-     <Compile Include="Assets\Scripts\Enemy_stat.cs" />
-     <Compile Include="Assets\Scripts\explosiv.cs" />
-     <Compile Include="Assets\Scripts\Granati.cs" />
-     <Compile Include="Assets\Scripts\Granten_Behavior.cs" />
-     <Compile Include="Assets\Scripts\Map.cs" />
-     <Compile Include="Assets\Scripts\MapCreator.cs" />
-     <Compile Include="Assets\Scripts\MapManager.cs" />
-     <Compile Include="Assets\Scripts\MoveEnemy.cs" />
-     <Compile Include="Assets\Scripts\SpawnEnemy.cs" />
-     <Compile Include="Assets\Scripts\Stampfi.cs" />
-     <Compile Include="Assets\Scripts\Stampfi_Behavior.cs" />
-     <Compile Include="Assets\Scripts\Turret_Behavior_PewPew.cs" />
-     <Compile Include="Assets\Scripts\Turret_Placement.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\BaseManager.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Enemy_stat.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\HUD\Turret_Placement.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Map.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\MapCreator.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\MapManager.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\MoveEnemy.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\SpawnEnemy.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Turret\Bullet.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Turret\explosiv.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Turret\Granati.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Turret\Granten_Behavior.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Turret\Stampfi.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Turret\Stampfi_Behavior.cs" />
+     <Compile Include="Assets\Prefabs\Scripts\Turret\Turret_Behavior_PewPew.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
