@@ -1,10 +1,13 @@
 # Tower-Defense - Oliver, Jenny, Alex, Daniel!
 
+A simple little tower defense game built as a first learning experience 
+for the Unity-Game-Engine
+
+---
+
 Ich will der aller Beste sein, wie keiner vor mir war...
 
 BIF!
-
-
 
 
 05.10.2017 - 1:40
